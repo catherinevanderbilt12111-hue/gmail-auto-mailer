@@ -2,7 +2,7 @@
 
 Free hosting through Google Apps Script. No paid Render resource is used.
 
-Deploy `Code.gs`, `Index.html` and `appsscript.json` in a standalone Apps Script project. Enable Gmail advanced service v1; deploy a web app executing as **User accessing the web app**, access **Anyone with a Google account**. ADMIN_EMAIL identifies the workspace owner; change it for a different workspace.
+Deploy `Code.gs`, `Index.html` and `appsscript.json` in a standalone Apps Script project. Enable Gmail advanced service v1; deploy a web app executing as **User accessing the web app**, access **Anyone with a Google account**. Set the script property `adminEmail` to the workspace owner Gmail address; do not hardcode personal identities in public source.
 
 Each Gmail signs in and authorizes independently. Admin registers an address; the invited user opens the same app, connects their account and shares their newly created business-data spreadsheet with the admin. User sees only their own data; admin can configure each mailbox and see cached records. Each user must install their own time trigger. Admin cannot use their authorization to send from another mailbox. Gmail quota and authorization requirements apply.
 
